@@ -31,7 +31,7 @@ namespace MT_ASSIGNMENT_1_Validation.Models
 
         [Display(Name = "Password")]
         [Required(ErrorMessage ="We can't let you in without password.")]
-        [RegularExpression("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$", ErrorMessage = "Please maintain 1 uppercase, 1 lowercase, 1 special charater and 1 number with minimum 8 digits")]
+        [RegularExpression("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$", ErrorMessage = "Please maintain 1 uppercase, 1 lowercase, 1 special charater and 1 number  minimum 8 digits")]
         public string pass { get; set; }
 
         [Display(Name = "Confirm Password")]
